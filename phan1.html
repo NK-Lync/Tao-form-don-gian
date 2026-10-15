@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần 1 - Form thông tin cá nhân</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container narrow">
+        <p class="back-link"><a href="index.html">← Về trang chủ</a></p>
+        <section class="form-card">
+            <p class="eyebrow">PHẦN 1</p>
+            <h1>Form thông tin cá nhân</h1>
+            <p class="intro">Vui lòng điền họ tên, email và chọn sở thích.</p>
+
+            <form action="#" method="get">
+                <div class="form-group">
+                    <label for="yourname">Họ và tên</label>
+                    <input type="text" id="yourname" name="yourname"
+                           placeholder="Nhập họ và tên" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="example@gmail.com" required>
+                </div>
+
+                <fieldset class="form-group">
+                    <legend>Sở thích</legend>
+                    <label class="choice"><input type="checkbox" name="hobby" value="thethao"> Thể thao</label>
+                    <label class="choice"><input type="checkbox" name="hobby" value="amnhac"> Âm nhạc</label>
+                    <label class="choice"><input type="checkbox" name="hobby" value="dulich"> Du lịch</label>
+                    <label class="choice"><input type="checkbox" name="hobby" value="docsach"> Đọc sách</label>
+                </fieldset>
+
+                <div class="buttons">
+                    <button type="submit" class="button">Gửi thông tin</button>
+                    <button type="reset" class="button button-secondary">Nhập lại</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
